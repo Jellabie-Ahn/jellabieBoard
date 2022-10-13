@@ -9,5 +9,6 @@
 		 select 
 		 	bno, title, content, writer, regDate, viewCnt
 		 from board.tbl_board
+	
 	</select>
 </mapper>

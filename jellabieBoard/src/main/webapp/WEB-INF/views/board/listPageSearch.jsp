@@ -38,6 +38,7 @@
 	  </c:forEach>
 	 </tbody>
 	</table>
+	
 	<div>
 	
 	<c:if test="${page.prev}">
@@ -61,7 +62,8 @@
 	<c:if test="${page.next}">
 	 <span>[ <a href="/board/listPageSearch?num=${page.endPageNum + 1}${page.searchTypeKeyword}">다음</a> ]</span> 
 	</c:if>
-	
+	</div>
+
 	<div>
 	 <select name="searchType">
 	     <option value="title" <c:if test="${page.searchType eq 'title'}">selected</c:if>>제목</option>

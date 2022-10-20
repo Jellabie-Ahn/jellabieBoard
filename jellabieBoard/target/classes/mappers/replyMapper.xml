@@ -14,8 +14,8 @@
 
 <!-- 댓글 작성 -->
 <insert id="replyWrite" parameterType="com.board.domain.ReplyVO">
-    insert into board.tbl_reply(bno, writer, content, regDate)
-        value(#{bno}, #{writer}, #{content}, #{regDate})
+    insert into board.tbl_reply(bno, writer, content)
+        value(#{bno}, #{writer}, #{content})
 </insert>
     
 <!-- 댓글 수정 -->
